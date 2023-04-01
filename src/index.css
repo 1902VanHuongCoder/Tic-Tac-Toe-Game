@@ -1,13 +1,161 @@
-body {
+*
+{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.actress
+{
+  width: 90%;
+  height: fit-content;
+  background: #fff;
+  padding: 20px 50px;
+  margin: 20px 0px 0px 20px;
+  border-radius: 10px;
 }
+.avatar
+{
+  border-radius: 50%;
+}
+.Cartable
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-collapse: collapse;
+  border: 1px solid #fff;
+}
+.Cartable td, th
+{
+  border: 1px solid #fff;
+  padding: 10px 20px;
+}
+ .Cartable button
+{
+  background: #fff;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  z-index: 100;
+} 
+
+/* ---------------------- Tic-Tac-Toe Project -------------------------------------*/
+.box-shadow
+{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #d07d7d;
+}
+.game
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  height: fit-content;
+  background: #d07d7d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  box-shadow: 0 15px 30px rgba(0,0,0,.3);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.game .game-box
+{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: #f5f0f038;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: inset 16px -16px 0 #fff
+}
+.game .game-box .board-status
+{
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: monospace;
+  background: #fff;
+}
+.game .game-box .square-board
+{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: green;
+  width: 165px;
+}
+.game .game-box .square-board .board-row
+{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.game .game-box .square-board button
+{
+  width: 55px;
+  height:55px;
+  border: none;
+  outline: none;
+}
+
+.game .game-info
+{
+  width: 200px;
+  background: #4fba69;
+  height: 300px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.game .game-info .game-info-title
+{
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: bold;
+  background: #fff;
+  border-top-right-radius: 10px;
+}
+.game .game-info ul {
+  height: 85.6%;
+  width: 100%;
+  padding: 10px 20px 0px 20px;
+  overflow: scroll;
+}
+
+.game .game-info ul li
+{
+  list-style: none;
+}
+
+.game .game-info ul li button
+{
+  padding: 5px;
+  font-family: monospace;
+
+}
+
+
+.game .game-info ul li button:hover
+{
+  background: blue;
+  color: #fff;
+  outline: none;
+  border: none;
+}
+
+
